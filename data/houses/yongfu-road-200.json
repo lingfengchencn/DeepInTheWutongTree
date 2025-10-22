@@ -1,0 +1,67 @@
+{
+  "id": "yongfu-road-200",
+  "name": "永福路200号",
+  "address": "上海市徐汇区永福路200号",
+  "yearBuilt": 1932,
+  "style": "现代主义",
+  "floors": 4,
+  "model": {
+    "color": "#8aa1b1",
+    "height": 16,
+    "footprint": {
+      "width": 20,
+      "depth": 20
+    }
+  },
+  "timeline": [
+    {
+      "year": 1932,
+      "event": "旅居法国的建筑师王述祖设计完成"
+    },
+    {
+      "year": 1988,
+      "event": "列入历史风貌保护建筑名单"
+    },
+    {
+      "year": 2022,
+      "event": "梧桐深处共创社区试点空间开放"
+    }
+  ],
+  "narratives": [
+    {
+      "title": "梧桐深处共创空间首展",
+      "summary": "青年策展人在此策划“洋房时间胶囊”展览，居民捐赠家族往事与老照片。",
+      "media": [
+        {
+          "type": "photo",
+          "title": "时间胶囊展览海报",
+          "src": "/assets/yongfu/time-capsule.jpg",
+          "source": "梧桐深处项目组"
+        }
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "上海老洋房保护协会",
+      "role": "共创空间运营者",
+      "intention": "推广洋房故事共创计划"
+    }
+  ],
+  "activities": [
+    {
+      "id": "time-capsule-workshop",
+      "title": "时间胶囊共创工作坊",
+      "date": "2024-08-10",
+      "slots": 16,
+      "remaining": 4,
+      "description": "邀请居民与游客共同制作洋房记忆胶囊，录制口述历史。"
+    }
+  ],
+  "valuation": {
+    "collectionRating": 91,
+    "preservationIndex": 95,
+    "rentalYield": 3.8,
+    "commentary": "拥有独特的社区共创定位，具备文化品牌与内容运营的双重价值。"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "wukang-building",
+  "name": "武康大楼",
+  "address": "上海市徐汇区淮海中路1850号",
+  "yearBuilt": 1924,
+  "style": "Art Deco",
+  "floors": 8,
+  "model": {
+    "color": "#d9644a",
+    "height": 22,
+    "footprint": {
+      "width": 26,
+      "depth": 18
+    },
+    "url": "/assets/gaolan/wenxin.gltf"
+  },
+  "timeline": [
+    {
+      "year": 1924,
+      "event": "先施公司投资建成"
+    },
+    {
+      "year": 1942,
+      "event": "远东航空俱乐部设立于此"
+    },
+    {
+      "year": 1994,
+      "event": "列为第二批市级优秀历史建筑"
+    }
+  ],
+  "narratives": [
+    {
+      "title": "艺术家的阳台",
+      "summary": "20世纪30年代，知名画家在武康大楼7楼的阳台上作画，记录下法租界街角的光影。",
+      "media": [
+        {
+          "type": "photo",
+          "title": "1930年阳台作画照",
+          "src": "/assets/gaolan/温馨的房子.png",
+          "source": "上海市档案馆"
+        }
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "叶家后人",
+      "role": "现任业主",
+      "intention": "计划打造城市文化沙龙"
+    }
+  ],
+  "activities": [
+    {
+      "id": "salon-night",
+      "title": "梧桐之夜城市沙龙",
+      "date": "2024-07-28",
+      "slots": 20,
+      "remaining": 6,
+      "description": "与艺术家对谈武康大楼百年风云，品尝老洋房冷萃咖啡。"
+    }
+  ],
+  "valuation": {
+    "collectionRating": 89,
+    "preservationIndex": 92,
+    "rentalYield": 3.2,
+    "commentary": "位于衡复风貌保护区核心，文化影响力与故事性极强，适合作为城市文化资产长期持有。"
+  }
+}

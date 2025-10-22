@@ -1,0 +1,68 @@
+{
+  "id": "gaolan-road-9",
+  "name": "高兰路9号",
+  "address": "上海市黄浦区高兰路9号",
+  "yearBuilt": 1921,
+  "style": "新古典主义",
+  "floors": 3,
+  "model": {
+    "color": "#c08f5b",
+    "height": 12,
+    "footprint": {
+      "width": 18,
+      "depth": 14
+    },
+    "url": "/assets/gaolan/wenxin.gltf"
+  },
+  "timeline": [
+    {
+      "year": 1921,
+      "event": "英国建筑师事务所为外籍银行家设计"
+    },
+    {
+      "year": 1950,
+      "event": "改为上海音乐学院教师宿舍"
+    },
+    {
+      "year": 2010,
+      "event": "建筑修缮完成，开放城市观光"
+    }
+  ],
+  "narratives": [
+    {
+      "title": "音乐家的午后练习",
+      "summary": "上音名师曾在此举办即兴室内乐会，记忆中的琴声在木质楼梯间回荡。",
+      "media": [
+        {
+          "type": "photo",
+          "title": "1958年室内乐海报",
+          "src": "/assets/gaolan/温馨的房子.png",
+          "source": "上海音乐学院档案室"
+        }
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "刘氏家族",
+      "role": "历史业主",
+      "intention": "致力于洋房保护基金"
+    }
+  ],
+  "activities": [
+    {
+      "id": "heritage-walk",
+      "title": "梧桐印象走读",
+      "date": "2024-08-03",
+      "slots": 30,
+      "remaining": 18,
+      "description": "与建筑史学者沿着高兰路打卡特色立面与装饰纹理。"
+    }
+  ],
+  "valuation": {
+    "collectionRating": 84,
+    "preservationIndex": 88,
+    "rentalYield": 2.7,
+    "commentary": "位于老法租界静谧街区，适合打造精品艺术居所或文化民宿。"
+  }
+}

@@ -1,0 +1,19 @@
+.story-card {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(16, 21, 32, 0.9);
+  border: 1px solid rgba(255, 215, 128, 0.12);
+}
+
+.story-card h4 {
+  margin: 0 0 6px;
+  color: #ffe3a1;
+  letter-spacing: 0.04em;
+}
+
+.story-card ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: rgba(255, 240, 209, 0.7);
+}

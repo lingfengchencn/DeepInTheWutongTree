@@ -1,0 +1,119 @@
+:root {
+  font-family: 'Noto Serif SC', 'STSong', serif;
+  color-scheme: light dark;
+  color: #f5f0e6;
+  background-color: #141721;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1f2535, #0d0f16);
+  color: #f5f0e6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-layout {
+  display: flex;
+  height: 100%;
+  gap: 24px;
+}
+
+.scene-column {
+  flex: 2.2;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 215, 128, 0.15);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  background: rgba(12, 14, 18, 0.85);
+}
+
+.panel-column {
+  flex: 1;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(20, 23, 34, 0.75);
+  border: 1px solid rgba(255, 215, 128, 0.15);
+  backdrop-filter: blur(12px);
+  overflow-y: auto;
+}
+
+.panel-column h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  letter-spacing: 0.06em;
+  color: #ffe3a1;
+}
+
+.scroll-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 215, 128, 0.15);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-card {
+  background: rgba(12, 14, 18, 0.85);
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(255, 215, 128, 0.1);
+}
+
+.section-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #ffe3a1;
+}
+
+.section-card p {
+  margin: 6px 0;
+  line-height: 1.55;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 18px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.4rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffe3a1;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, #ffa94d, #ffd166);
+  color: #1c1f2d;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 209, 102, 0.25);
+}
