@@ -1,19 +1,13 @@
 .conversation-overlay {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  width: 360px;
-  max-height: 85vh;
-  padding: 18px;
-  border-radius: 24px;
-  background: rgba(18, 20, 30, 0.92);
-  border: 1px solid rgba(255, 215, 153, 0.2);
-  backdrop-filter: blur(14px);
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.35);
-  z-index: 30;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(18, 20, 30, 0.82);
+  border: 1px solid rgba(255, 215, 153, 0.18);
+  width: 100%;
+  flex: 1;
 }
 
 .conversation-overlay .mascot {
@@ -24,7 +18,7 @@
 
 .conversation-overlay .mascot header h1 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.08em;
   color: #ffe3a1;
 }
@@ -36,8 +30,8 @@
 }
 
 .mic {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -85,29 +79,6 @@
   }
 }
 
-.quick-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.chip {
-  border-radius: 999px;
-  border: 1px solid rgba(255, 215, 153, 0.35);
-  padding: 8px 14px;
-  background: rgba(255, 215, 153, 0.1);
-  color: #ffe9c4;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  transition: border 0.2s ease, background 0.2s ease;
-}
-
-.chip:hover {
-  border-color: rgba(255, 215, 153, 0.6);
-  background: rgba(255, 215, 153, 0.2);
-}
-
 .transcript-log {
   flex: 1;
   overflow-y: auto;
@@ -115,6 +86,7 @@
   flex-direction: column;
   gap: 10px;
   padding-right: 6px;
+  max-height: 220px;
 }
 
 .log-item {
@@ -138,6 +110,10 @@
   background: rgba(120, 120, 120, 0.2);
 }
 
+.log-item-pending {
+  border: 1px dashed rgba(255, 215, 153, 0.45);
+}
+
 .log-item .speaker {
   font-size: 0.7rem;
   letter-spacing: 0.05em;
@@ -146,8 +122,34 @@
 }
 
 .log-item .text {
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.log-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: rgba(255, 240, 209, 0.7);
+}
+
+.log-navigation {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(79, 122, 196, 0.2);
+  color: rgba(217, 232, 255, 0.85);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.log-status {
+  color: rgba(255, 214, 146, 0.85);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
 }
 
 .controls {

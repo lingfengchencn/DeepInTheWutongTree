@@ -5,7 +5,6 @@ import { offlineScript } from '../script/offlineScript';
 export const useOfflineScript = () => {
   const offlineMode = useAppStore((state) => state.offlineMode);
   const moveToHouse = useAppStore((state) => state.moveToHouse);
-  const enterInterior = useAppStore((state) => state.enterInterior);
   const showCommunity = useAppStore((state) => state.showCommunity);
   const showValuation = useAppStore((state) => state.showValuation);
   const guideSpeak = useAppStore((state) => state.guideSpeak);
@@ -47,11 +46,13 @@ export const useOfflineScript = () => {
             break;
         }
       }, step.delay);
-      timeouts.current.push(handle);
+      if (step.action !== 'enterInterior') {
+        timeouts.current.push(handle);
+      }
     });
 
     return () => {
       timeouts.current.forEach((timeout) => clearTimeout(timeout));
     };
-  }, [offlineMode, guideSpeak, moveToHouse, enterInterior, showCommunity, showValuation]);
+  }, [offlineMode, guideSpeak, moveToHouse, showCommunity, showValuation]);
 };

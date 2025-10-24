@@ -49,6 +49,29 @@ export interface HouseOwner {
   intention: string;
 }
 
+export type ScriptCharacter = 'AI' | 'user';
+
+export interface ConversationTurn {
+  character: ScriptCharacter;
+  text: string;
+  audio: string;
+  navigateTo?: string;
+  highlightHouseId?: string;
+  delayMs?: number;
+  action?: 'enterInterior' | 'playVideo';
+  video?: string;
+}
+
+export interface HouseScript {
+  home: ConversationTurn[];
+  detail: ConversationTurn[];
+}
+
+export interface MapPosition {
+  x: number;
+  z: number;
+}
+
 export interface HouseProfile {
   id: string;
   name: string;
@@ -62,6 +85,8 @@ export interface HouseProfile {
   owners: HouseOwner[];
   activities: HouseActivity[];
   valuation: HouseValuation;
+  mapPosition: MapPosition;
+  script: HouseScript;
 }
 
 export interface TranscriptEntry {
@@ -69,9 +94,12 @@ export interface TranscriptEntry {
   speaker: 'guide' | 'user' | 'system';
   text: string;
   timestamp: number;
+  mode?: 'online' | 'offline';
+  status?: 'pending' | 'resolved';
+  navigationTarget?: string;
 }
 
-export type Stage = 'idle' | 'intro' | 'touring' | 'interior' | 'valuation' | 'community';
+export type Stage = 'home' | 'idle' | 'intro' | 'touring' | 'interior' | 'valuation' | 'community';
 
 export interface ScriptStep {
   delay: number;

@@ -1,0 +1,111 @@
+{
+  "id": "moller-villa",
+  "name": "马勒别墅",
+  "address": "上海市静安区陕西北路30号",
+  "yearBuilt": 1936,
+  "style": "北欧童话风",
+  "floors": 4,
+  "model": {
+    "color": "#d48b62",
+    "height": 24,
+    "footprint": {
+      "width": 28,
+      "depth": 26
+    },
+    "url": "/assets/gaolan/马勒别墅.glb",
+    "scale": 2.3
+  },
+  "timeline": [
+    {
+      "year": 1936,
+      "event": "英国商人埃里克·马勒委托邬达克设计完工"
+    },
+    {
+      "year": 1947,
+      "event": "别墅成为沪上国际社交圈热门聚会场所"
+    },
+    {
+      "year": 2018,
+      "event": "完成结构加固与庭院复原，开放主题酒店"
+    }
+  ],
+  "narratives": [
+    {
+      "title": "童话塔楼的航海梦",
+      "summary": "马勒别墅的女儿曾梦想航行北海，父亲便让建筑师将尖塔屋顶做成帆船形状，彩色玻璃窗映着海浪与海鸥。",
+      "media": [
+        {
+          "type": "photo",
+          "title": "马勒别墅庭院影像",
+          "src": "/assets/gaolan/马勒别墅.jpg",
+          "source": "上海市静安区档案馆"
+        }
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "马勒家族后人",
+      "role": "品牌顾问",
+      "intention": "以“童话漫游”体验吸引年轻旅行者"
+    }
+  ],
+  "activities": [
+    {
+      "id": "moller-story-night",
+      "title": "童话塔楼沉浸夜宿",
+      "date": "2024-08-22",
+      "slots": 12,
+      "remaining": 3,
+      "description": "入住塔楼顶层，聆听 AI 讲述马勒女儿的航海日记，体验北欧主题调香。"
+    }
+  ],
+  "valuation": {
+    "collectionRating": 92,
+    "preservationIndex": 93,
+    "rentalYield": 3.9,
+    "commentary": "极具辨识度的童话式立面与庭院空间，是城市精品酒店与文化演艺的黄金载体。"
+  },
+  "mapPosition": {
+    "x": 44,
+    "z": -28
+  },
+  "script": {
+    "home": [
+      {
+        "character": "AI",
+        "text": "右侧的马勒别墅像童话城堡般耸立，红砖塔楼与铜绿色屋顶讲述着一位航海爱好者的梦想。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "moller-villa",
+        "delayMs": 3400
+      },
+      {
+        "character": "AI",
+        "text": "庭院里种着北欧冷杉与上海梧桐，夜间会开启灯光秀与香氛漫游。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3000
+      }
+    ],
+    "detail": [
+      {
+        "character": "AI",
+        "text": "马勒别墅融合英式乡村与挪威木屋风格，塔楼上的破风窗可以俯瞰整个陕西北路历史风貌区。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "moller-villa",
+        "delayMs": 3600
+      },
+      {
+        "character": "AI",
+        "text": "当年的主人希望把海浪带进上海，于是让工匠把海马、海星的浮雕藏在立面角落里。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3200
+      },
+      {
+        "character": "AI",
+        "text": "告诉我“播放航海日记”，我会调出塔楼录音，让你听见她梦里的北欧海风。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3000
+      }
+    ]
+  }
+}

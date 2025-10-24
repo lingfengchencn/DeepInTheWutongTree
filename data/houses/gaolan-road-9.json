@@ -12,7 +12,8 @@
       "width": 18,
       "depth": 14
     },
-    "url": "/assets/gaolan/wenxin.gltf"
+    "url": "/assets/gaolan/wenxin.gltf",
+    "scale": 2.3
   },
   "timeline": [
     {
@@ -36,7 +37,7 @@
         {
           "type": "photo",
           "title": "1958年室内乐海报",
-          "src": "/assets/gaolan/温馨的房子.png",
+          "src": "/assets/gaolan/wenxin.png",
           "source": "上海音乐学院档案室"
         }
       ]
@@ -64,5 +65,27 @@
     "preservationIndex": 88,
     "rentalYield": 2.7,
     "commentary": "位于老法租界静谧街区，适合打造精品艺术居所或文化民宿。"
+  },
+  "mapPosition": {
+    "x": -22,
+    "z": -14
+  },
+  "script": {
+    "home": [],
+    "detail": [
+      {
+        "character": "AI",
+        "text": "高兰路九号的新古典主义立面在清晨的阳光下显得格外温柔，正立面柱头的藤叶雕刻记录了旧时银行家的审美。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "gaolan-road-9",
+        "delayMs": 3400
+      },
+      {
+        "character": "AI",
+        "text": "上海音乐学院的教师曾在这里排练室内乐，我们准备了一段老录音，稍后你可以在档案区回放那段楼梯间回荡的琴声。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3200
+      }
+    ]
   }
 }

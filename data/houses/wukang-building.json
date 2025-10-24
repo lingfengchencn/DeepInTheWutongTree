@@ -12,7 +12,8 @@
       "width": 26,
       "depth": 18
     },
-    "url": "/assets/gaolan/wenxin.gltf"
+    "url": "/assets/gaolan/武康大楼.glb",
+    "scale": 2.3
   },
   "timeline": [
     {
@@ -36,7 +37,7 @@
         {
           "type": "photo",
           "title": "1930年阳台作画照",
-          "src": "/assets/gaolan/温馨的房子.png",
+          "src": "/assets/gaolan/武康大楼.png",
           "source": "上海市档案馆"
         }
       ]
@@ -64,5 +65,83 @@
     "preservationIndex": 92,
     "rentalYield": 3.2,
     "commentary": "位于衡复风貌保护区核心，文化影响力与故事性极强，适合作为城市文化资产长期持有。"
+  },
+  "mapPosition": {
+    "x": 0,
+    "z": 0
+  },
+  "script": {
+    "home": [
+      {
+        "character": "AI",
+        "text": "这里是衡山路武康路口，我们脚下这片梧桐树海正是梧桐深处的起点。你可以看到武康大楼、永福路和高兰路的洋房在地图上次第亮起。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "wukang-building",
+        "delayMs": 3600
+      },
+      {
+        "character": "AI",
+        "text": "周围的活动也在热身：今晚的梧桐之夜城市沙龙只剩下六个席位，高兰路那边的走读和永福路的共创工作坊都在准备迎客。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "gaolan-road-9",
+        "delayMs": 3600
+      },
+      {
+        "character": "AI",
+        "text": "如果想听听附近的故事，只要对我说：去某栋洋房看看。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "yongfu-road-200",
+        "delayMs": 3200
+      },
+      {
+        "character": "user",
+        "text": "去武康大楼看看。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 1800
+      },
+      {
+        "character": "AI",
+        "text": "收到，我们一起前往武康大楼，准备好迎接法租界最传奇的转角故事。",
+        "audio": "/assets/audio/silence.wav",
+        "navigateTo": "house/wukang-building",
+        "delayMs": 2000
+      }
+    ],
+    "detail": [
+      {
+        "character": "AI",
+        "text": "眼前的武康大楼建于1924年，Art Deco 曲线在阳光下泛着铜色的光泽。七楼的艺术家阳台依旧保留着当年的画架与玻璃房顶。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "wukang-building",
+        "delayMs": 3600
+      },
+      {
+        "character": "AI",
+        "text": "沙龙今晚将在一层拱廊开始，AI 房灵已经准备好故事胶囊，随时可以带你走进住户的记忆里。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3200
+      },
+      {
+        "character": "user",
+        "text": "能进去看看吗？",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 1600
+      },
+      {
+        "character": "AI",
+        "text": "想走进中庭吗？只要对我说“进入室内”，我们就能沿着旋梯慢慢上楼，留意脚下的老花地砖。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "wukang-building",
+        "delayMs": 3400
+      },
+      {
+        "character": "AI",
+        "text": "这是 AI 复原的 1935 年武康大楼中庭影像，你可以看到阳光穿过彩色玻璃洒在大理石墙面上。",
+        "audio": "/assets/audio/silence.wav",
+        "action": "playVideo",
+        "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+        "delayMs": 4000
+      }
+    ]
   }
 }

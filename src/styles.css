@@ -15,43 +15,46 @@ body {
   min-height: 100vh;
 }
 
-.app-layout {
-  display: flex;
-  height: 100%;
-  gap: 24px;
+.home-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+  gap: 28px;
+  min-height: 660px;
 }
 
-.scene-column {
-  flex: 2.2;
+.home-section {
   position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 215, 128, 0.15);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-  background: rgba(12, 14, 18, 0.85);
+  min-height: 600px;
 }
 
-.panel-column {
+.home-mini-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-ai-console {
+  display: flex;
+}
+
+.home-ai-console > * {
   flex: 1;
-  padding: 24px;
-  border-radius: 24px;
-  background: rgba(20, 23, 34, 0.75);
-  border: 1px solid rgba(255, 215, 128, 0.15);
-  backdrop-filter: blur(12px);
-  overflow-y: auto;
-}
-
-.panel-column h2 {
-  font-size: 1.4rem;
-  margin-top: 0;
-  letter-spacing: 0.06em;
-  color: #ffe3a1;
 }
 
 .scroll-stack {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+@media (max-width: 960px) {
+  .home-content {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section {
+    min-height: auto;
+  }
 }
 
 .badge {

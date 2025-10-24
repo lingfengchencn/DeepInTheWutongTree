@@ -1,0 +1,111 @@
+{
+  "id": "rong-residence",
+  "name": "荣宅",
+  "address": "上海市静安区陕西北路186号",
+  "yearBuilt": 1918,
+  "style": "法式文艺复兴",
+  "floors": 3,
+  "model": {
+    "color": "#caa57a",
+    "height": 18,
+    "footprint": {
+      "width": 24,
+      "depth": 22
+    },
+    "url": "/assets/gaolan/荣宅.glb",
+    "scale": 2.3
+  },
+  "timeline": [
+    {
+      "year": 1918,
+      "event": "荣宗敬家族委托意大利建筑师邬达克设计建造"
+    },
+    {
+      "year": 1937,
+      "event": "成为沪上绅士社交与商务宴会的重要场所"
+    },
+    {
+      "year": 2017,
+      "event": "修缮后重启，举办“荣宅艺术项目”系列展览"
+    }
+  ],
+  "narratives": [
+    {
+      "title": "梦回荣氏客厅",
+      "summary": "黄铜吊灯照亮的主客厅里，爵士钢琴与留声机交织着二十世纪初的节奏，旧报纸上的股市行情仍贴在壁炉边。",
+      "media": [
+        {
+          "type": "photo",
+          "title": "荣宅立面影像",
+          "src": "/assets/gaolan/荣宅.jpg",
+          "source": "荣宅艺术项目档案"
+        }
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "荣宗敬家族后裔",
+      "role": "文化策展人",
+      "intention": "以沉浸式展览重建老上海的城市记忆"
+    }
+  ],
+  "activities": [
+    {
+      "id": "rong-art-tour",
+      "title": "荣宅夜场声光导览",
+      "date": "2024-08-16",
+      "slots": 24,
+      "remaining": 5,
+      "description": "通过声光叙事重温荣家庄园的晚宴礼仪与音乐沙龙。"
+    }
+  ],
+  "valuation": {
+    "collectionRating": 94,
+    "preservationIndex": 96,
+    "rentalYield": 3.5,
+    "commentary": "集建筑艺术、金融史与当代展览于一体，是老洋房更新的典范案例。"
+  },
+  "mapPosition": {
+    "x": -46,
+    "z": -22
+  },
+  "script": {
+    "home": [
+      {
+        "character": "AI",
+        "text": "前方的荣宅由“面粉大王”荣宗敬打造，意大利石材与法式阳台交织出金融家最钟爱的审美。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "rong-residence",
+        "delayMs": 3600
+      },
+      {
+        "character": "AI",
+        "text": "现在的荣宅被改造成沉浸式展览空间，黄铜、玻璃与音乐重新唤醒上世纪的摩登夜宴。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3200
+      }
+    ],
+    "detail": [
+      {
+        "character": "AI",
+        "text": "荣宅的立面借鉴法国文艺复兴的对称语汇，拱券门和爱奥尼柱托起二层的露台，内院则保留着百年前的意大利花园。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "rong-residence",
+        "delayMs": 3600
+      },
+      {
+        "character": "AI",
+        "text": "你脚下的马赛克地砖是从意大利运来的原石，荣家曾在这里接待上海的企业家、银行家与戏剧家。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3400
+      },
+      {
+        "character": "AI",
+        "text": "如果想听听荣家长女的婚礼故事，可以让我播放“荣宅声景档案”。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 2800
+      }
+    ]
+  }
+}

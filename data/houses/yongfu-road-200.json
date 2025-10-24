@@ -63,5 +63,27 @@
     "preservationIndex": 95,
     "rentalYield": 3.8,
     "commentary": "拥有独特的社区共创定位，具备文化品牌与内容运营的双重价值。"
+  },
+  "mapPosition": {
+    "x": 18,
+    "z": 20
+  },
+  "script": {
+    "home": [],
+    "detail": [
+      {
+        "character": "AI",
+        "text": "永福路二百号是梧桐深处的共创据点，现代主义的方正体量里藏着一座时间胶囊展厅。",
+        "audio": "/assets/audio/silence.wav",
+        "highlightHouseId": "yongfu-road-200",
+        "delayMs": 3400
+      },
+      {
+        "character": "AI",
+        "text": "居民在这里捐赠家族故事，我们会用 AI 将手绘户型复原成沉浸式空间，一起守护老洋房的记忆。",
+        "audio": "/assets/audio/silence.wav",
+        "delayMs": 3200
+      }
+    ]
   }
 }
